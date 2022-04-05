@@ -1,0 +1,127 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+hr {
+  border: none;
+  background: linear-gradient(-90deg, #3fcee1, #3fe9bd);
+  height: 3px; /* Толщина линии */
+ }
+
+
+ .card_img{
+   margin: auto;
+   padding: 0px 0px 30% 0px;
+   overflow: hidden;
+   position: relative;
+   
+ }
+
+
+.card_img img{
+  width:80%;
+  height:80%;
+  object-fit: cover;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin:auto;
+}
+
+.infBlock {
+  position: relative;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 5px rgba(0,0,0,.2);
+  overflow: hidden;
+  margin: 3% 0px 3% 0px;
+  padding: 70px;
+}
+
+
+.infBlock:first-child:before {
+  background: linear-gradient(-90deg, #3fcee1, #3fe9bd);
+}
+
+.infBlock:last-child:before {
+  background: linear-gradient(-90deg, #f1bd2b, #ee9738);
+}
+
+.procent {
+  font-size: 30px;
+  margin: 0;
+  color: #545353;
+  text-align: center;
+  position: relative;
+  font-family: monospace;
+}
+
+.textInform {
+  position: absolute;
+  left: 50%;
+  margin-top: 50px;
+  line-height: 140%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #545353;
+}
+
+.product-list {
+  background: #fafafa;
+  padding: 15px 0;
+}
+.btn {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  width:40%;
+  margin:auto;
+  margin-top: 33%;
+  margin-bottom: 7%;
+  cursor: pointer;
+  background: linear-gradient(to left, #785ad6, #4aabce, #785ad6);
+  background-size: 200%;
+  padding: 15px 30px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 30px;
+  transition: .4s;
+}
+
+.infBlock:first-child .btn {
+  background: linear-gradient(to left, #3fcee1, #3fe9bd, #3fcee1);
+  background-size: 200%;
+}
+
+.infBlock:last-child .btn {
+  background: linear-gradient(to left, #ee9738, #f1bd2b, #ee9738);
+  background-size: 200%;
+}
+
+.btn:hover,
+.infBlock:first-child .btn:hover,
+.infBlock:last-child .btn:hover {
+  background-position: right;
+}
