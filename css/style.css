@@ -1,86 +1,95 @@
+@media only screen and (max-width: 4000px){
+
 body{
   font-family: sans-serif;
+  margin: 0;
+  padding: 0;
   min-width: 1200px;
 }
 
-hr {
-  border: none;
-  background: linear-gradient(-90deg, #3fcee1, #3fe9bd);
-  height: 3px; /* Толщина линии */
- }
-
-
- .card_img{
-   margin: 45px 60px 0px;
-   padding: auto;
-   overflow: hidden;
-   position: relative;
-   object-fit: cover;
-   display: block;
-   position: relative;
-   width:275px;
-   height:80px;
- }
-
-
-.wrap {
-  display: flex;
+ul{
+  font-size: 40px;
+  list-style: none;
   align-items: center;
-  justify-content: space-between;
-	flex-wrap: wrap;
-	flex-direction: row;
-  width:1200px;
-	margin:auto;
-  padding:0px 15px;
+  display: flex;
+  justify-content: center;
+  
 }
 
-.infBlock {
-  position: relative;
-  float:left;
-  width:33,33%;
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.line {
+  border: none;
+  background: linear-gradient(-90deg,#785ad6, #4aabce, #785ad6);
+  height: 3px; /* Толщина линии */
+  width: 350px;
+ }
+
+ .container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+ }
+
+.card {
+  width: 500px;
+  height: 500px;
+
   border-radius: 20px;
-  box-shadow: 0 0 20px 5px rgba(0,0,0,.2);
-  overflow: hidden;
-  margin: 50px 30px 0px 30px;
-  padding: 70px;
+  background: #fff;
+  box-shadow: 0 0 20px 5px rgba(0,0,0,.2); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+	margin: 20px 10px;
+
 }
 
+.card-image{
+  height: 80px;
+	max-height: 100%;
+	max-width: 100%;
+}
 
-.infBlock:first-child:before {
+.card-text{
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+  line-height: 150%;
+}
+
+.card-text p{
+	font-weight: bold;
+	color:#000000;
+	text-align: center;
+}
+
+.card-button{
+  background: linear-gradient(to left, #785ad6, #4aabce, #785ad6);
+  background-size: 200%;
+  padding: 12px 30px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 30px;
+  transition: .4s;
+}
+
+.card:first-child:before {
   background: linear-gradient(-90deg, #3fcee1, #3fe9bd);
 }
 
-.infBlock:last-child:before {
+.card:last-child:before {
   background: linear-gradient(-90deg, #f1bd2b, #ee9738);
 }
 
-.procent {
-  font-size: 30px;
-  margin-left: 0;
-  margin-right: 0;
-  margin: 20px 0px 0px;
-  padding: 0;
-  line-height: 1.2;
-  word-wrap: break-word;
-  position: relative;
-  color: #545353;
-  text-align: center;
-  font-family: monospace;
-}
-
-.textInform {
-  font-size: 20px;
-  margin-left: 0;
-  margin-right: 0;
-  margin: 20px 0px 0px;
-  padding: 0;
-  line-height: 1.6;
-  word-wrap: break-word;
-  position: relative;
-  text-align: center;
-  font-weight: 600;
-  color: #545353;
-}
 
 .btn {
   display: block;
@@ -101,12 +110,12 @@ hr {
   transition: .4s;
 }
 
-.infBlock:first-child .btn {
+.card:first-child .card-button {
   background: linear-gradient(to left, #3fcee1, #3fe9bd, #3fcee1);
   background-size: 200%;
 }
 
-.infBlock:last-child .btn {
+.card:last-child .card-button {
   background: linear-gradient(to left, #ee9738, #f1bd2b, #ee9738);
   background-size: 200%;
 }
@@ -116,3 +125,50 @@ hr {
 .infBlock:last-child .btn:hover {
   background-position: right;
 }
+
+.faq {
+  width: 1200px;
+  margin: 20px auto;
+}
+.faq-item {
+  border-top: 1px solid rgb(0, 0, 0); /* Линия сверху текста */
+  border-bottom: 1px solid rgb(0, 0, 0); /* Линия снизу текста */
+}
+.faq-title {
+  
+  position: relative;
+  padding: 10px;
+  
+  cursor: pointer;
+  font-weight: 600;
+  
+}
+
+.faq-title::before {
+  content: '+';
+  position: absolute;
+  top:50%;
+  right:20px;
+  transform: translateY(-50%);
+  font-size: 1,5em;
+}
+.faq.active .faq-title::before {
+  content: '-';
+}
+
+.content {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0,5s;
+  overflow-y: auto;
+}
+
+.faq.active .content{
+  height: auto;
+  padding: 10px;
+}
+
+}
+
+
