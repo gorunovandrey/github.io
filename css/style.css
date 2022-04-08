@@ -1,16 +1,46 @@
-body{
+ 
+* {
   font-family: sans-serif;
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
 }
 
-ul{
+.main{
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.topnav {
+  background-color: rgb(60, 60, 60);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  display: block;
+  font-family: Trebuchet MS,sans-serif;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
   font-size: 40px;
+  border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid red;
+}
+
+.topnav a.active {
+  border-bottom: 3px solid red;
+}
+
+.str{
   list-style: none;
   align-items: center;
   display: flex;
-  justify-content: center;
-  
+  justify-content: center; 
+  font-weight: 600;
 }
 
 a {
@@ -18,12 +48,48 @@ a {
   color: rgb(0, 0, 0);
 }
 
-.line {
+
+.line1{
   border: none;
   background: linear-gradient(-90deg,#785ad6, #4aabce, #785ad6);
   height: 3px; /* Толщина линии */
   width: 350px;
- }
+  margin: 0 auto;
+}
+
+.line2{
+  border: none;
+  background: linear-gradient(to left, #3fcee1, #3fe9bd, #3fcee1);
+  height: 3px; /* Толщина линии */
+  width: 350px;
+  margin: 0 auto;
+}
+
+.line3{
+  border: none;
+  background: linear-gradient(to left, #ee9738, #f1bd2b, #ee9738);
+  height: 3px; /* Толщина линии */
+  width: 350px;
+  margin: 0 auto;
+}
+
+.head-text{
+  font-family: Trebuchet MS,sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
+  color: rgb(0, 0, 0);
+}
+
+.main-text{
+  font-family: Trebuchet MS,sans-serif;
+  font-size: 25px;
+  text-align: center;
+  margin: 0 auto;
+  color: rgb(0, 0, 0);
+}
 
  .container {
   width: 100%;
@@ -44,9 +110,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-sizing: border-box;
-	margin: 20px 10px;
-
+	margin: 30px auto;
 }
 
 .card-image{
@@ -56,10 +120,12 @@ a {
 }
 
 .card-text{
+  font-size: 20px;
   display: flex;
 	flex-direction: column;
 	align-items: center;
   line-height: 150%;
+  margin: 10px auto;
 }
 
 .card-text p{
@@ -68,7 +134,7 @@ a {
 	text-align: center;
 }
 
-.card-button{
+.card-button1{
   background: linear-gradient(to left, #785ad6, #4aabce, #785ad6);
   background-size: 200%;
   padding: 12px 30px;
@@ -79,66 +145,52 @@ a {
   transition: .4s;
 }
 
-.card:first-child:before {
-  background: linear-gradient(-90deg, #3fcee1, #3fe9bd);
-}
-
-.card:last-child:before {
-  background: linear-gradient(-90deg, #f1bd2b, #ee9738);
-}
-
-
-.btn {
-  display: block;
-  justify-content: center;
-  text-align: center;
-  border-style: none;
-  margin: 29px auto 0;
-  padding: 13px 63px 14px 62px;
-  cursor: pointer;
-  background: linear-gradient(to left, #785ad6, #4aabce, #785ad6);
+.card-button2{
+  background: linear-gradient(to left, #3fcee1, #3fe9bd, #3fcee1);
   background-size: 200%;
-  padding: 15px 30px;
+  padding: 12px 30px;
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
   border-radius: 30px;
-  box-shadow: 0 9px 50px -5 #3fe9bd;
   transition: .4s;
 }
 
-.card:first-child .card-button {
-  background: linear-gradient(to left, #3fcee1, #3fe9bd, #3fcee1);
+.card-button3{
+  background: linear-gradient(-90deg, #f1bd2b, #ee9738);
   background-size: 200%;
+  padding: 12px 30px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 30px;
+  transition: .4s;
 }
 
-.card:last-child .card-button {
-  background: linear-gradient(to left, #ee9738, #f1bd2b, #ee9738);
-  background-size: 200%;
+x
+.size{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
 }
-
-.btn:hover,
-.infBlock:first-child .btn:hover,
-.infBlock:last-child .btn:hover {
-  background-position: right;
+.accordeon{
+  margin: 40px 20px;
+  max-width:1140px;
 }
 
 .faq {
-  max-width: 1200px;
-  margin: 20px auto;
+  position: relative;
 }
-.faq-item {
-  border-top: 1px solid rgb(0, 0, 0); /* Линия сверху текста */
-  border-bottom: 1px solid rgb(0, 0, 0); /* Линия снизу текста */
-}
+
+
 .faq-title {
-  
   position: relative;
   padding: 10px;
-  
   cursor: pointer;
+  border-top: 1px solid rgb(0, 0, 0); 
+  font-family: Trebuchet MS,sans-serif;
+  font-size: 25px;
   font-weight: 600;
-  
 }
 
 .faq-title::before {
@@ -154,11 +206,12 @@ a {
 }
 
 .content {
+  font-family: Trebuchet MS,sans-serif;
+  font-size: 18px;;
   position: relative;
-  height: 0;
+  max-height: 0;
   overflow: hidden;
-  transition: 0,5s;
-  overflow-y: auto;
+  transition: 0,3s ease-in-out;
 }
 
 .faq.active .content{
