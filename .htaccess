@@ -1,3 +1,3 @@
 RewriteEngine On
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /zaim\.html\ HTTPS/
-RewriteRule ^zaim\.html$ https://skhzaim.ru/ [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTPS/
+RewriteRule ^index\.html$ https://skhzaim.ru/ [R=301,L]
