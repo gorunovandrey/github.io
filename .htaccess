@@ -7,3 +7,5 @@ RewriteCond %{ENV:REDIRECT_STATUS} ^$
 RewriteRule ^(.+)\.html$ /$1 [R=301,L]
 RewriteCond %{SCRIPT_FILENAME}.html -f
 RewriteRule [^/]$ %{REQUEST_URI}.html [QSA,L] 
+
+Redirect 301 /index https://skhzaim.ru
