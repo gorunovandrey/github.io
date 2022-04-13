@@ -147,19 +147,18 @@
         padding: 0;
     }
     
-    .button-text{
-      font-size: 16px;
-      text-decoration: none;
-      color: #fff;
-      text-transform: uppercase;
-    }
-    
+
     .card-button1{
       background: linear-gradient(to left, #785ad6, #4aabce, #785ad6);
       background-size: 200%;
       padding: 12px 50px;
       border-radius: 30px;
       transition: .4s;
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      margin-top: 5px;
+      font-size: 16px;
     }
     
     .card-button2{
@@ -171,6 +170,8 @@
       text-transform: uppercase;
       border-radius: 30px;
       transition: .4s;
+      margin-top: 5px;
+      font-size: 16px;
     }
     
     .card-button3{
@@ -182,6 +183,8 @@
       text-transform: uppercase;
       border-radius: 30px;
       transition: .4s;
+      margin-top: 5px;
+      font-size: 16px;
     }
     
     x
@@ -386,12 +389,6 @@
         padding: 0;
     }
     
-    .button-text{
-      font-size: 14px;
-      text-decoration: none;
-      color: #fff;
-      text-transform: uppercase;
-    }
     
     .card-button1{
       background: linear-gradient(to left, #785ad6, #4aabce, #785ad6);
@@ -399,6 +396,11 @@
       padding: 12px 50px;
       border-radius: 30px;
       transition: .4s;
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      margin-top: 5px;
+      font-size: 14px;
     }
     
     .card-button2{
@@ -410,6 +412,8 @@
       text-transform: uppercase;
       border-radius: 30px;
       transition: .4s;
+      margin-top: 5px;
+      font-size: 14px;
     }
     
     .card-button3{
@@ -421,6 +425,8 @@
       text-transform: uppercase;
       border-radius: 30px;
       transition: .4s;
+      margin-top: 5px;
+      font-size: 14px;
     }
     
     
@@ -640,6 +646,11 @@
       padding: 12px 50px;
       border-radius: 30px;
       transition: .4s;
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      margin-top: 5px;
+      font-size: 12px;
     }
     
     .card-button2{
@@ -651,6 +662,8 @@
       text-transform: uppercase;
       border-radius: 30px;
       transition: .4s;
+      margin-top: 5px;
+      font-size: 12px;
     }
     
     .card-button3{
@@ -662,6 +675,8 @@
       text-transform: uppercase;
       border-radius: 30px;
       transition: .4s;
+      margin-top: 5px;
+      font-size: 12px;
     }
     
     

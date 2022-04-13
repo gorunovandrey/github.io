@@ -146,6 +146,7 @@ a {
     margin:5px;
     padding: 0;
 } 
+
 .button-text{
   font-size: 18px;
   text-decoration: none;
@@ -157,8 +158,13 @@ a {
   background: linear-gradient(to left, #785ad6, #4aabce, #785ad6);
   background-size: 200%;
   padding: 12px 50px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
   border-radius: 30px;
   transition: .4s;
+  margin-top: 5px;
+  font-size: 18px;
 }
 
 .card-button2{
@@ -170,6 +176,8 @@ a {
   text-transform: uppercase;
   border-radius: 30px;
   transition: .4s;
+  margin-top: 5px;
+  font-size: 18px;
 }
 
 .card-button3{
@@ -181,9 +189,10 @@ a {
   text-transform: uppercase;
   border-radius: 30px;
   transition: .4s;
+  margin-top: 5px;
+  font-size: 18px;
 }
 
-x
 .size{
   display: flex;
   justify-content: center; 
