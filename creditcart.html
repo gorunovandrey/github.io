@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<title>Zaim</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/adaptive.css">
+		<link rel="shortcut icon" href="Picture/money.png" type="image/png">
+		<meta name="viewport" content="width=device-width">
+		<nav class="topnav">
+			<ul class="str">
+				<li><a href="index.html">Микрозаймы</a></li>
+				<li><a href="debcart.html">Дебетовые карты</a></li>
+                <li><a class="active" href="creditcart.html">Кредитные карты</a></li>
+			</ul>
+		</nav>
+	</head>
+	<body>
+        <div class="main">
+            <div class="main-text"><h1>Воспользуйтесь специальными предложениями</h1></div>
+            <div class="container">
+                <div class="card">
+                    <img src="Picture/Otkr_logo.png" alt="openbank" class="card-image">
+                    <div class="card-text">
+                        <h2>Банк "Открытие"</h2>
+                        <div class="line1"></div>
+                        <p>Бесплатное обслуживание<br>Льготный период: 120 дней<br>Бесплатная доставка в удобное место и время<br>Кредитный лимит: Макс. — 500 000 рублей<br>
+                        Процентная ставка: 39,9% годовых<br>Рассмотрение:</p>		  
+                    </div>
+                    <div  class="card-button1">
+                        <a href="https://vk.com/away.php?to=https%3A%2F%2Fwww.open.ru%2Fcredit_cards%2F120days%3Foid%3Dxiv52zxu2%26utm_source%3Dopencpa%26utm_medium%3Dcpa%26utm_campaign%3D2222%26utm_content%3Du032u%26utm_term%3Dweb_id%26wid%3Du032u%26statid%3D1451_&cc_key=" class="button-text">Подать заявку</a>	
+                    </div>	
+                </div>
+            </div>
+            <div class="size">
+                <div class="accordeon">
+                    <div class="faq">
+                        <div class="faq-title">Банк "Открытие"(Информация о программе)</div> 
+                        <div class="content">
+                            <p>О карте</p>
+                            <ul>
+                                <li>Валюта счета карты (СКС): Рубли РФ</li>
+                                <li>Срок действия: 4 года</li>
+                            </ul>
+                            <p>Обслуживание</p>
+                            <ul>
+                                <li>Стоимость выпуска карты: 0 рублей</li>
+                                <li>Стоимость обслуживания: бесплатно на весь срок действия карты</li>
+                                <li>Уведомления по карте: Первые 30 дней бесплатно, далее SMS — 99 руб., Push Pro — 59 руб., Push — 0 руб. в месяц.</li>
+                            </ul>
+                            <p>Кредитный лимит</p>
+                            <ul>
+                                <li>Кредитный лимит: Устанавливается в соответствии с условиями Договора. Макс. — 500 000 рублей</li>
+                                <li>Процентная ставка за пользование кредитом: 39,9% годовых</li>
+                                <li>Льготный период кредитования: До 120 дней. Продолжительность Льготного периода кредитования — три расчетных периода (РП) + один платежный период (ПП). РП — один месяц с даты установки кредитного лимита. ПП — один месяц с даты окончания третьего РП</li>
+                                <li>Минимальный ежемесячный платеж по карте: 3% от суммы задолженности по основному долгу на конец предыдущего расчетного периода (но не менее 300 рублей) + сумма процентов, начисленных на сумму основного долга за расчетный период в течение расчетного периода. Минимальный ежемесячный платеж подлежит обязательной уплате в течение Платежного периода (по окончанию третьего Расчетного периода).</li>       
+                            </ul>
+                            <p>Снятие (до 300 000 руб. в день до 1 200 000 руб. в месяц, суммарно по всем картам)</p>
+                            <li>В любых банкоматах: 5,9% + 590 рублей</li>
+                            <p>Пополнение</p>
+                            <ul>
+                                <li>В банкоматах «Открытия» и партнеров: 0 рублей</li>
+                                <li>В других банкоматах: 0 рублей</li>
+                            </ul>
+                            <p>Переводы и платежи</p>
+                            <ul>
+                                <li>Переводы с банковской карты «Открытия» на банковские карты «Открытия»: 5,9% + 590 Рублей РФ</li>
+                                <li>Платежи (в т. ч. ЖКХ, налоги, штрафы): 0 рублей</li>
+                            </ul>
+                         </div>
+                    </div>
+                </div>
+            </div>	
+        </div>	
+        <script>
+            document.querySelectorAll('.faq-title').forEach((el) => {
+                el.addEventListener('click', () => {
+                    let content = el.nextElementSibling;
+                    
+                    if(content.style.maxHeight) {
+                        document.querySelectorAll('.content').forEach((el) => el.style.maxHeight = null)
+                    } else {
+                        document.querySelectorAll('.content').forEach((el) => el.style.maxHeight = null)
+                        content.style.maxHeight = content.scrollHeight + 'px'
+                    }
+                })
+            })	
+        </script>
+        </div>
+    </body>
